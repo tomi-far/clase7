@@ -1,0 +1,37 @@
+.box1{background-color: burlywood;}
+.box2{background-color: yellow;}
+.box3{background-color: red;}
+.box4{color: white;}
+.box5{color: white;}
+.box6{color: white;}
+.box7{color: white;}
+.box8{color: white;}
+/*.box9{color: white;}*/
+
+body{display: grid; gap: 10px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+@media (min-width: 321px) {grid-template-columns: 1fr 1fr;
+    .box1{background-color: teal;}
+    .box2{background-color: greenyellow;}
+    .box3{background-color: yellow;}
+    .box4{background-color: burlywood; color: black;}
+    .box5{background-color: grey; color: black;}
+    .box6{background-color: red; color: black;}
+    .box7{color: white;}
+    .box8{color: white;}
+    /*.box9{color: white;}*/}; 
+
+@media (min-width: 769px) {grid-template-columns: 1fr 1fr 1fr;
+    .box1{background-color: cyan;}
+    .box2{background-color: purple;}
+    .box3{background-color: red;}
+    .box4{background-color: greenyellow;}
+    .box5{background-color: goldenrod;}
+    .box6{background-color: teal;}
+    .box7{background-color: yellow; color: black;}
+    .box8{background-color: grey; color: black;
+          grid-column-start: 2;
+          grid-column-end: 4;
+          grid-row-start: 3;
+          grid-row-end: 4;}
+    /*.box9{background-color: burlywood; color: black;}*/}}
